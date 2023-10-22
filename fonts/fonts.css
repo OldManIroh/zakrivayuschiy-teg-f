@@ -16,8 +16,8 @@
     font-weight: 400 785;
 }
 
-@supports(font-variation-settings: normal){
-    body{
-        font-family:"Inter-Variable", sans-serif;
+@supports (font-variation-settings: normal) {
+    body {
+        font-family: "Inter-Variable", sans-serif;
     }
 }
