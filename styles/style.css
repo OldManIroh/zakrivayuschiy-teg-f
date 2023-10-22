@@ -17,4 +17,439 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  background-image:
+    repeating-linear-gradient(to right, var(--gradient-color) 0 2px, transparent 2px 4px),
+    repeating-linear-gradient(var(--gradient-color) 0 2px, transparent 2px 4px),
+    linear-gradient(var(--gradient-begin) 0.01%, var(--gradient-end) 100%);
+  background-size: cover;
+  background-attachment: fixed;
+  width: clamp(23.188rem, 16.035rem + 30.516vw, 43.5rem);
+}
+
+.header {
+  margin: auto;
+  margin-block-start: 100px;
+  /*width: clamp(24.733rem, 17.104rem + 32.551vw, 46.4rem);*/
+  max-width: 696px;
+  background-color: var(--background-color);
+  margin-block-end: 100px;
+  border: 2px solid var(--themes-main-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header__title {
+  padding-block-start: 120px;
+  color: var(--themes-main-color);
+  font-family: "Press Start 2P";
+  font-size: 49px;
+  text-transform: uppercase;
+  padding-block-end: 20px;
+}
+
+.header__subtitle {
+  color: var(--themes-main-color);
+  font-family: "Press Start 2P";
+  font-size: 14px;
+  text-transform: uppercase;
+  padding-block-end: 25px;
+}
+
+.theme-menu__list {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding-inline-start: 20px;
+  font-family: "Press Start 2P";
+  gap: 6px;
+  font-size: 14px;
+  padding-block-end: 18px;
+}
+
+.theme-menu__button {
+  position: relative;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  color: var(--themes-main-color);
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.theme-menu__button:hover {
+  opacity: 0.6;
+  transition: opacity 0.3s;
+}
+
+.theme-menu__button::after {
+  content: "";
+  display: block;
+  height: 3px;
+  margin-top: 3px;
+  background-color: var(--themes-main-color);
+  transform-origin: 0 0;
+  transform: scaleX(0);
+  transition: none;
+}
+
+.theme-menu__button:focus {
+  outline: none;
+  opacity: 0.6;
+  transition: opacity 0.3s;
+}
+
+.theme-menu__button:focus-visible::after {
+  transform: scaleX(1);
+  transition: transform 0.3s;
+}
+
+/*.theme-menu__button::after {
+  content: '';
+  display: block;
+  width: 0%;
+  height: 3px;
+  margin-top: 3px;
+  transition: none;
+}
+
+.theme-menu__button:hover::after {
+  width: 100%;
+  background-color: var(--themes-main-color);
+  opacity: 0.6;
+  transition: width 300ms, background-color 0.3s;
+}*/
+
+.theme-menu__button:disabled {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.theme-menu__button:disabled::before {
+  position: absolute;
+  content: "▶";
+  animation: arrow 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes arrow {
+  0%{
+    left: -18px;
+  }
+  100%{
+    left: -14px;
+  }
+}
+
+.content {
+  background-color: transparent;
+}
+
+.content__card {
+  background-color: var(--background-color);
+  border: 2px solid var(--themes-main-color);
+  margin-block-end: 50px;
+}
+
+.content__card-title {
+  color: var(--themes-main-color);
+  font-family: "Inter-Variable";
+  font-size: 18px;
+  font-weight: 700;
+  padding-inline-start: 10px;
+  padding-inline-end: 10px;
+  padding-block-start: 4px;
+  padding-block-end: 5px;
+}
+
+.content__card-text {
+  color: var(--themes-main-color);
+  font-family: "Inter-Variable";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  padding-block-start: 25px;
+  padding-inline: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+}
+
+.image {
+  width: 100%;
+  object-fit: cover;
+}
+
+.image-2 {
+  filter: grayscale(80%);
+
+}
+
+.image-3 {
+  filter: saturate(400%);
+}
+
+.image-4 {
+  filter: hue-rotate(30deg);
+}
+
+.image-5 {
+  filter: invert(1);
+}
+
+.image-6 {
+  filter: sepia(90%);
+}
+
+.image-7 {
+  filter: blur(0.5rem);
+}
+
+.image-8 {
+  filter: hue-rotate(-275deg) contrast(50%);
+}
+
+.card__icon-n-like{
+  display: flex;
+  justify-content: end;
+  margin-block: 25px;
+  margin-inline-end: 25px;
+  gap:12px;
+}
+
+.card__icon-button{
+  position: relative;
+  width: 42px;
+  height: 38px;
+  background-color: transparent;
+  border: 2px solid transparent;
+  
+}
+
+.like-icon{
+  position: absolute;
+  top:0;
+  left: 0;
+}
+
+.card__icon-button:focus{
+  outline: none;
+}
+
+.card__icon-button:focus-visible{
+  border-color: var(--themes-main-color);
+  transition: border-color 0.3s ease;
+}
+
+.card__like-button {
+  cursor: pointer;
+  color: var(--themes-main-color);
+  border: 2px solid var(--themes-main-color);
+  width: 130px;
+  height: 38px;
+  justify-self: right;
+  background-color: transparent;
+  font-family: "Press Start 2P";
+  font-size: 14px;
+  line-height: 90%;
+}
+
+
+
+.content__card-bottom {
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+}
+
+.button__save{
+  display: block;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  margin-block-end: 102px;
+  cursor: pointer;
+  width: clamp(19.125rem, 18.4868rem + 2.723vw, 20.9375rem);
+  height: clamp(5rem, 5.638rem + -2.723vw, 3.188rem);
+  background-color: var(--background-color);
+  color: var(--themes-main-color);
+  font-family: "Press Start 2P";
+  line-height: 90%;
+  font-size: 14px;
+  
+}
+
+.floppy{
+  width: clamp(1.75rem, 1.904rem + -0.6573vw, 1.3125rem);
+}
+
+.button__style{
+  position: relative;
+}
+
+.button__style:focus{
+  outline: none;
+}
+
+.button__style:focus-visible{
+  box-shadow: 2px 2px var(--themes-main-color);
+  transition: box-shadow 0.3s;
+}
+
+.button__style::after{
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--themes-main-color);
+  transform: scaleX(0);
+  transform-origin: 0 0;
+
+}
+
+.button__style:hover::after{
+  transform: scaleX(1);
+  transition: transform 0.5s ease-in-out;
+}
+
+.button__style:hover .button__text {
+  position: relative;
+  mix-blend-mode: difference;
+  color: var(--background-color);
+  z-index: 1;
+}
+
+.button__style:hover .floppy{
+  position: relative;
+  fill:var(--background-color);
+  z-index: 1;
+}
+
+.main-body{
+  fill:transparent;
+}
+
+.core{
+  fill:transparent;
+}
+
+.contour{
+  fill: var(--themes-main-color);
+}
+
+.sparks{
+  opacity: 0;
+}
+
+.like-icon:hover .main-body{
+  fill:var(--themes-main-color);
+  transition: fill 0.3s 0.05s linear;
+}
+
+.like-icon .main-body{
+  transition-delay: 0s;
+}
+
+.like-icon:hover .core{
+  fill:var(--themes-main-color);
+  transition: fill 0.3s 0s linear;
+}
+
+.like-icon .core{
+  transition-delay: 0.03s;
+}
+
+.like-icon:active .main-body{
+  fill:var(--heart-color);
+  transition: fill 0.3s 0.05s linear;
+}
+
+
+.like-icon:active .core{
+  fill:var(--heart-color);
+  transition: fill 0.3s 0s linear;
+}
+
+.like-icon.is-liked .core{
+  fill:var(--heart-color);
+}
+
+.like-icon.is-liked .main-body{
+  fill:var(--heart-color);
+  transition: fill 0.3s 0.05s linear;
+}
+
+.like-icon.is-liked .contour{
+  fill:var(--heart-color);
+  transition: fill 0.3s 0.06s linear ;
+}
+
+@keyframes zoom {
+  100%{
+    scale:1.5;
+  }
+}
+
+.like-icon.is-liked{
+  animation: zoom 0.3s 0.1s ease-in reverse;
+}
+
+@keyframes flash {
+  100%{
+    opacity: 1;
+  }
+}
+
+.like-icon.is-liked .sparks{
+  animation: flash 0.3s 0.3s ease-in reverse;
+}
+
+.dialog{
+  position: fixed;
+  background-color: var(--background-color);
+  min-width: 341px;
+  min-height: 195px;
+  border: 2px solid var(--themes-main-color);
+}
+
+.dialog::backdrop{
+  background-color: rgb(0 0 0 / 0.75);
+}
+
+.dialog__floppy-n-text{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  padding-block-start: 32px;
+  padding-block-end: 30px;
+}
+
+.dialog__text{
+  max-width: 198px;
+  color: var(--themes-main-color);
+  font-family: "Press Start 2P";
+  font-size: 14px;
+  line-height: 150%;
+  text-transform: uppercase;
+}
+
+.floppy-2{
+  height: 39px;
+  width: 39px;
+}
+
+.dialog__close{
+  cursor: pointer;
+  display: block;
+  margin-inline: auto;
+  background-color: transparent;
+  min-width: 257px;
+  min-height: 38px;
+  border: 2px solid var(--themes-main-color);
+  color: var(--themes-main-color);
+  font-family: "Press Start 2P";
+  font-size: 14px;
+  line-height: 90%; /* 12.6px */
+  text-transform: uppercase;
 }
