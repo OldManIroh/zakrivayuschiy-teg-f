@@ -3,7 +3,6 @@
 <symbol id="floppy"
     stroke="currentColor"
     fill="currentColor">
-<g id="floppy">
 <rect id="Rectangle 18" x="0.5" width="2.15385" height="2.15385" fill="currentColor"/>
 <rect id="Rectangle 17" x="0.5" y="2.15405" width="2.15385" height="2.15385" fill="currentColor"/>
 <rect id="Rectangle 19" x="0.5" y="4.30762" width="2.15385" height="2.15385" fill="currentColor"/>
@@ -84,6 +83,5 @@
 <rect id="Rectangle 50" x="28.5" y="10.7693" width="2.15385" height="2.15385" transform="rotate(-180 28.5 10.7693)" fill="currentColor"/>
 <rect id="Rectangle 51" x="28.5" y="8.61523" width="2.15385" height="2.15385" transform="rotate(-180 28.5 8.61523)" fill="currentColor"/>
 <rect id="Rectangle 52" x="28.5" y="6.46167" width="2.15385" height="2.15385" transform="rotate(-180 28.5 6.46167)" fill="currentColor"/>
-</g>
 </symbol>
 </svg>

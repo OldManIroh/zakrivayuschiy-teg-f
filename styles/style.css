@@ -312,17 +312,19 @@
   background-color: var(--themes-main-color);
   transform: scaleX(0);
   transform-origin: 0 0;
+  
 }
 
 .button__style:hover::after {
   transform: scaleX(1);
   transition: transform 0.5s ease-in-out;
+  z-index: 0;
 }
 
 .button__style:hover .button__text {
   position: relative;
   mix-blend-mode: difference;
-  color: var(--themes-main-color-second);
+  color: black;
   z-index: 1;
 }
 
@@ -429,6 +431,7 @@
 }
 
 .floppy-2 {
+  color:var(--themes-main-color);
   height: 39px;
   width: 39px;
 }
