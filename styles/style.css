@@ -16,9 +16,10 @@
 /*НЕДОДЕЛОК ОЧЕНЬ МНОГО*/
 @supports (font-variation-settings: normal) {
   body {
-      font-family: Inter, sans-serif;
+    font-family: Inter, sans-serif;
   }
 }
+
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
@@ -149,7 +150,7 @@
   padding-inline-end: 25px;
 }
 
-.content__card-text-contain{
+.content__card-text-contain {
   display: flex;
   flex-direction: column;
   gap: 27px;
@@ -179,25 +180,23 @@
   mix-blend-mode: hard-light;
   text-transform: uppercase;
   font-weight: 400;
-  text-shadow: 1px 0 1px var(--themes-main-color-second), 
-  0 1px 1px var(--themes-main-color-second), 
-  -1px 0 1px var(--themes-main-color-second), 
-  0 -1px 1px var(--themes-main-color-second);
+  text-shadow: 1px 0 1px var(--themes-main-color-second),
+    0 1px 1px var(--themes-main-color-second),
+    -1px 0 1px var(--themes-main-color-second),
+    0 -1px 1px var(--themes-main-color-second);
 }
 
-@supports(-webkit-text-stroke: 1px var(--themes-main-color-second)){
-  .content__card__image-label{
+@supports (-webkit-text-stroke: 1px var(--themes-main-color-second)) {
+  .content__card__image-label {
     -webkit-text-stroke: 0.6px var(--themes-main-color-second);
     text-shadow: none;
-    
   }
 }
 
 .image {
   width: 100%;
-  min-width: 371px;
   object-fit: cover;
-  object-position:center;
+  object-position: center;
 }
 
 .image-2 {
@@ -266,8 +265,6 @@
   line-height: 90%;
 }
 
-
-
 .button__save {
   display: block;
   margin-inline-start: auto;
@@ -281,7 +278,7 @@
   font-family: "Press Start 2P";
   line-height: 90%;
   font-size: 14px;
-  border:2px solid var(--themes-main-color)
+  border: 2px solid var(--themes-main-color);
 }
 
 .floppy {
@@ -312,7 +309,6 @@
   background-color: var(--themes-main-color);
   transform: scaleX(0);
   transform-origin: 0 0;
-  
 }
 
 .button__style:hover::after {
@@ -324,13 +320,13 @@
 .button__style:hover .button__text {
   position: relative;
   mix-blend-mode: difference;
-  color: black;
+  color: var(--themes-main-color-second);
   z-index: 1;
 }
 
 .button__style:hover .floppy {
   position: relative;
-  color:var(--themes-main-color-second);
+  color: var(--themes-main-color-second);
   z-index: 1;
 }
 
@@ -431,7 +427,7 @@
 }
 
 .floppy-2 {
-  color:var(--themes-main-color);
+  color: var(--themes-main-color);
   height: 39px;
   width: 39px;
 }
