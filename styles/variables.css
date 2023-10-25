@@ -1,6 +1,6 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
-    --background-color: #ffffff;
+    --themes-main-color-second: #ffffff;
     --accent-color: #000000;
     --themes-main-color: #000000;
     --gradient-color: #d3d3d3;
