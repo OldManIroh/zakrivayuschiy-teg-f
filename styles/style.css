@@ -15,7 +15,6 @@
 */
 /*НЕДОДЕЛОК ОЧЕНЬ МНОГО*/
 
-
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
@@ -107,7 +106,7 @@
 
 .theme-menu__button:disabled {
   opacity: 0.6;
-  poInter, sans-serif-events: none;
+  cursor: pointer;
 }
 
 .theme-menu__button:disabled::before {
@@ -130,7 +129,7 @@
   color: var(--themes-main-color);
   font-family: Inter, sans-serif;
   font-size: 18px;
-  font-variation-settings:"wght" var(--font-weight-bold);
+  font-variation-settings: "wght" var(--font-weight-bold);
   padding-inline-start: 10px;
   padding-inline-end: 10px;
   padding-block-start: 4px;
@@ -156,7 +155,7 @@
   color: var(--themes-main-color);
   font-family: Inter, sans-serif;
   font-size: 18px;
-  font-variation-settings:"wght" var(--font-weight-normal);
+  font-variation-settings: "wght" var(--font-weight-normal);
   line-height: 21px;
 }
 
@@ -195,31 +194,31 @@
   object-position: center;
 }
 
-.image-2 {
+.image_type_grayscale {
   filter: grayscale(80%);
 }
 
-.image-3 {
+.image_type_saturate {
   filter: saturate(400%);
 }
 
-.image-4 {
+.image_type_hue-rotate {
   filter: hue-rotate(30deg);
 }
 
-.image-5 {
+.image_type_invert {
   filter: invert(1);
 }
 
-.image-6 {
+.image_type_sepia {
   filter: sepia(90%);
 }
 
-.image-7 {
+.image_type_blur {
   filter: blur(0.5rem);
 }
 
-.image-8 {
+.image_type_contrast {
   filter: hue-rotate(-275deg) contrast(50%);
 }
 
@@ -266,7 +265,7 @@
   margin-inline-start: auto;
   margin-inline-end: auto;
   margin-block-end: 102px;
-  cursor: poInter, sans-serif;
+  cursor: pointer;
   width: clamp(19.125rem, 18.4868rem + 2.723vw, 20.9375rem);
   height: clamp(5rem, 5.638rem + -2.723vw, 3.188rem);
   background-color: var(--themes-main-color-second);
@@ -275,6 +274,15 @@
   line-height: 90%;
   font-size: 14px;
   border: 2px solid var(--themes-main-color);
+}
+
+@media (width<=375) {
+  .floppy-n-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
 }
 
 .floppy {
@@ -319,8 +327,6 @@
   color: var(--themes-main-color-second);
   z-index: 1;
 }
-
-
 
 .button__style:hover .floppy {
   position: relative;
