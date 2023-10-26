@@ -134,7 +134,7 @@
   color: var(--themes-main-color);
   font-family: Inter;
   font-size: 18px;
-  font-weight: 700;
+  font-weight: var(--font-weight-bold);
   padding-inline-start: 10px;
   padding-inline-end: 10px;
   padding-block-start: 4px;
@@ -160,7 +160,7 @@
   color: var(--themes-main-color);
   font-family: Inter;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: var(--font-weight-normal);
   line-height: 21px;
 }
 
@@ -324,8 +324,11 @@
   z-index: 1;
 }
 
+
+
 .button__style:hover .floppy {
   position: relative;
+  mix-blend-mode: difference;
   color: var(--themes-main-color-second);
   z-index: 1;
 }
