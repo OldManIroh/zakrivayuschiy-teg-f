@@ -12,7 +12,7 @@
     --gradient-begin: #e7e7e7;
     --gradient-end: #1a1a1a;
     --heart-color: #FF0000;
-    --font-weight-normal: 400;
+    --font-weight-regular: 400;
     --font-weight-bold: 700;
 }
 
@@ -23,7 +23,7 @@
     --gradient-color: #000;
     --gradient-begin: #007f0c;
     --gradient-end: #004306;
-    --font-weight-normal: 465;
+    --font-weight-regular: 465;
     --font-weight-bold: 785;
 }
 
@@ -36,7 +36,7 @@
         --gradient-begin: #e7e7e7;
         --gradient-end: #1a1a1a;
         --heart-color: #FF0000;
-        --font-weight-normal: 400;
+        --font-weight-regular: 400;
         --font-weight-bold: 700;
     }
 }
@@ -49,7 +49,7 @@
         --gradient-color: #000;
         --gradient-begin: #007f0c;
         --gradient-end: #004306;
-        --font-weight-normal: 465;
+        --font-weight-regular: 465;
         --font-weight-bold: 785;
     }
 }
