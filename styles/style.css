@@ -42,7 +42,7 @@
 .header__title {
   padding-block-start: clamp(7.5rem, 7.1479rem + 1.5023vw, 8.5rem);
   color: var(--themes-main-color);
-  font-family: "Press Start 2P";
+  font-family: "Press Start 2P", serif;
   font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
   text-transform: uppercase;
   padding-block-end: 20px;
@@ -50,7 +50,7 @@
 
 .header__subtitle {
   color: var(--themes-main-color);
-  font-family: "Press Start 2P";
+  font-family: "Press Start 2P", serif;
   font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
   text-transform: uppercase;
   padding-block-end: 25px;
@@ -61,7 +61,7 @@
   flex-direction: column;
   align-items: start;
   padding-inline-start: 20px;
-  font-family: "Press Start 2P";
+  font-family: "Press Start 2P", serif;
   gap: 6px;
   font-size: 14px;
   padding-block-end: 17px;
@@ -167,7 +167,7 @@
 .content__card__image-label {
   position: absolute;
   color: var(--themes-main-color);
-  font-family: "Press Start 2P";
+  font-family: "Press Start 2P", serif;
   font-size: 14px;
   top: 25px;
   right: clamp(0.6875rem, 0.3794rem + 1.3146vw, 1.5625rem);
@@ -255,7 +255,7 @@
   height: 38px;
   justify-self: right;
   background-color: transparent;
-  font-family: "Press Start 2P";
+  font-family: "Press Start 2P", serif;
   font-size: 14px;
   line-height: 90%;
 }
@@ -270,17 +270,18 @@
   height: clamp(5rem, 5.638rem + -2.723vw, 3.188rem);
   background-color: var(--themes-main-color-second);
   color: var(--themes-main-color);
-  font-family: "Press Start 2P";
+  font-family: "Press Start 2P", serif;
   line-height: 90%;
   font-size: 14px;
   border: 2px solid var(--themes-main-color);
 }
 
 @media (width <=375px) {
-  .floppy-n-text {
+  .button__save {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 10px;
   }
 }
@@ -323,14 +324,14 @@
 
 .button__style:hover .button__text {
   position: relative;
-  mix-blend-mode: difference;
+  mix-blend-mode: var(--mix-blend);
   color: var(--themes-main-color-second);
   z-index: 1;
 }
 
 .button__style:hover .floppy {
   position: relative;
-  mix-blend-mode: difference;
+  mix-blend-mode: var(--mix-blend);
   color: var(--themes-main-color-second);
   z-index: 1;
 }
@@ -357,6 +358,7 @@
 }
 
 .like-icon .main-body {
+  transition-duration: 0.3s;
   transition-delay: 0s;
 }
 
@@ -366,6 +368,7 @@
 }
 
 .like-icon .core {
+  transition-duration: 0.03s;
   transition-delay: 0.03s;
 }
 
@@ -425,9 +428,10 @@
 .dialog__text {
   max-width: 198px;
   color: var(--themes-main-color);
-  font-family: "Press Start 2P";
+  font-family: "Press Start 2P", serif, serif;
   font-size: 14px;
   line-height: 150%;
+  font-weight: 400;
   text-transform: uppercase;
 }
 
@@ -435,6 +439,7 @@
   color: var(--themes-main-color);
   height: 39px;
   width: 39px;
+  stroke-width:0.5;
 }
 
 .dialog__close {
@@ -446,7 +451,7 @@
   min-height: 38px;
   border: 2px solid var(--themes-main-color);
   color: var(--themes-main-color);
-  font-family: "Press Start 2P";
+  font-family: "Press Start 2P", serif, serif; 
   font-size: 14px;
   line-height: 90%;
   /* 12.6px */
