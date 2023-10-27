@@ -230,9 +230,9 @@
 }
 
 .card__icon-button {
-  position: relative;
-  width: 42px;
-  height: 38px;
+  padding: 0;
+  width: 40px;
+  height: 40px;
   background-color: transparent;
   border: 2px solid transparent;
   cursor: pointer;
@@ -276,7 +276,7 @@
   border: 2px solid var(--themes-main-color);
 }
 
-@media (width<=375) {
+@media (width <=375px) {
   .floppy-n-text {
     display: flex;
     flex-direction: column;
