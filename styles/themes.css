@@ -14,7 +14,7 @@
     --heart-color: #FF0000;
     --font-weight-regular: 400;
     --font-weight-bold: 700;
-    --mix-blend:difference;
+    --mix-blend: difference;
 }
 
 :root.theme-dark {
@@ -26,7 +26,7 @@
     --gradient-end: #004306;
     --font-weight-regular: 465;
     --font-weight-bold: 785;
-    --mix-blend:normal;
+    --mix-blend: normal;
 }
 
 @media (prefers-color-scheme: light) {
@@ -40,7 +40,7 @@
         --heart-color: #FF0000;
         --font-weight-regular: 400;
         --font-weight-bold: 700;
-        --mix-blend:difference;
+        --mix-blend: difference;
     }
 }
 
@@ -54,6 +54,6 @@
         --gradient-end: #004306;
         --font-weight-regular: 465;
         --font-weight-bold: 785;
-        --mix-blend:normal;
+        --mix-blend: normal;
     }
 }
