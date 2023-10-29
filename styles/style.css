@@ -180,7 +180,6 @@
   opacity: 0.5;
   mix-blend-mode: hard-light;
   text-transform: uppercase;
-  font-weight: 400;
   text-shadow: 1px 0 1px var(--themes-main-color-second),
     0 1px 1px var(--themes-main-color-second),
     -1px 0 1px var(--themes-main-color-second),
@@ -414,11 +413,7 @@
     justify-content: center;
     gap: 10px;
     max-width: 306px;
-    max-height: 80px;
-  }
-
-  .button__save {
-    min-height: 80px;
+    height: 80px;
   }
 
   .floppy {
